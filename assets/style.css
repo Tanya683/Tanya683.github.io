@@ -24,7 +24,7 @@ nav {
   padding: 15px 20px;
   border-radius: 0 0 20px 20px;
   text-align: center;
-  margin: 0; /* remove gap under navbar */
+  margin: 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -40,19 +40,19 @@ nav a:hover {
   color: white;
 }
 
+/* Make hero text white + readable */
 .hero-content h1,
 .hero-content p {
-  color: #ffffff !important;        /* pure white */
-  text-shadow: 0px 4px 14px rgba(0,0,0,0.55); /* stronger glow for readability */
+  color: #ffffff !important;
+  text-shadow: 0px 4px 14px rgba(0,0,0,0.55);
 }
 
-
 /* ---------------------------------------
-   LARGE FULL-WIDTH HERO (NO SIDE GAPS)
+   LARGE FULL-WIDTH HERO (NO CROPPING)
 ----------------------------------------*/
 .hero-large {
   width: 100%;
-  height: 430px;
+  height: auto; /* allow image to define height */
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -62,27 +62,26 @@ nav a:hover {
 
 .hero-bg {
   width: 100%;
-  height: 100%;
-  object-fit: contain;     /* shows the FULL image */
+  height: auto !important; /* prevents cropping */
+  display: block;
+  object-fit: contain; /* show entire image */
   object-position: center;
-  background-color: #FFC0CB; /* fills empty space with pink */
+  background-color: #FFC0CB; /* pink padding behind image */
 }
 
-
-
-
-
-/* DARK OVERLAY FOR TEXT VISIBILITY */
+/* Overlay over the image */
 .hero-overlay {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     rgba(0,0,0,0.2),
     rgba(0,0,0,0.5)
   );
 }
 
-/* TEXT ON IMAGE */
+/* Text inside hero image */
 .hero-content {
   position: absolute;
   bottom: 40px;
@@ -114,13 +113,10 @@ nav a:hover {
   border-radius: 0;
 }
 
-
 .page-inner {
   max-width: 950px;
   margin: auto;
 }
-
-
 
 /* -----------------------------
    HEADINGS

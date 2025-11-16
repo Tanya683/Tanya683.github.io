@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: default
 title: Projects
 permalink: /projects/
 ---
+
+<img src="https://raw.githubusercontent.com/ProgrammingHero1/Pictures/main/code-dark.png" style="width:100%;border-radius:15px;margin-bottom:20px;">
 
 # Projects
 

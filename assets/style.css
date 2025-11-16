@@ -1,0 +1,101 @@
+/* ------------------------------
+   Global Styles
+--------------------------------*/
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+/* Smooth fade animation */
+* {
+  transition: 0.25s ease;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Links (cute developer style) */
+a {
+  color: #6a5acd;  /* soft purple */
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: #ff69b4;  /* cute pink hover */
+}
+
+/* Code highlight */
+code {
+  background: #f2f2f2;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+/* Page container card */
+.page-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Navbar */
+nav a {
+  margin-right: 18px;
+  font-size: 17px;
+}
+
+/* Section spacing */
+section {
+  margin: 30px 0;
+}
+
+/* Cute underline effect */
+h1, h2 {
+  position: relative;
+}
+h1::after, h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 40px;
+  height: 4px;
+  background: #6a5acd;
+  border-radius: 10px;
+}
+
+/* Project cards */
+.project-card {
+  background: #ffffff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.07);
+  border-color: #ff69b4;
+}
+
+/* Cute bullet points */
+ul li::marker {
+  color: #ff69b4;
+}
+
+/* Footer small text */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}

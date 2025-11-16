@@ -3,7 +3,6 @@ layout: default
 title: Home
 hero: |
   <div class="hero-large">
-    <img src="/assets/aesthetic.jpg" class="hero-bg">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Tanya Singh</h1>
@@ -11,6 +10,7 @@ hero: |
     </div>
   </div>
 ---
+
 
 <div class="page-inner">
 

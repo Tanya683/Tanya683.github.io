@@ -12,14 +12,20 @@ hero: |
   </div>
 ---
 
-# 👋 Hi, I'm **Tanya Singh**
+<div class="page-inner">
 
+Hello 
 I am a software engineer with 4 years of experience building scalable backend systems, optimizing microservices, and delivering high-quality applications using Java, Spring Boot, and Python FastAPI.
 
-I specialize in:
+## I specialize in:
 - Microservices Architecture  
 - RESTful API Development  
-- Spring Boot, Spring Cloud, JPA, Hibernate  
-- CI/CD pipelines (Jenkins + GitHub)  
-- Credential Security (OAuth2, JWT, CyberArk Vault)  
-- Test Automation (TestNG, Selenium)  
+- Spring Boot, Spring Cloud  
+- CI/CD (Jenkins, GitHub)  
+- Credential Security  
+- Test Automation  
+
+</div>
+
+
+

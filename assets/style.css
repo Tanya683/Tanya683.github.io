@@ -1,101 +1,102 @@
-/* ------------------------------
-   Global Styles
---------------------------------*/
+/* -----------------------------
+   GLOBAL STYLING
+------------------------------ */
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1.7;
   max-width: 900px;
   margin: auto;
-  padding: 25px;
-  background: #fafafa;
-  color: #1a1a1a;
+  padding: 30px;
+  background: #fefefe;
+  color: #2c3e50;
+  line-height: 1.7;
+  transition: 0.3s ease;
 }
 
-/* Smooth fade animation */
+/* Smooth animations */
 * {
-  transition: 0.25s ease;
+  transition: 0.25s ease-in-out;
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-weight: 700;
-  color: #222;
-}
-
-/* Links (cute developer style) */
+/* -----------------------------
+   LINKS
+------------------------------ */
 a {
-  color: #6a5acd;  /* soft purple */
-  text-decoration: none;
+  color: #18bc9c;
   font-weight: 600;
+  text-decoration: none;
 }
 a:hover {
-  color: #ff69b4;  /* cute pink hover */
+  color: #ff66b2;
 }
 
-/* Code highlight */
-code {
-  background: #f2f2f2;
-  padding: 3px 6px;
-  border-radius: 6px;
+/* -----------------------------
+   NAVBAR
+------------------------------ */
+nav {
+  background: #2c3e50;
+  padding: 15px 20px;
+  border-radius: 14px;
+  text-align: center;
+  margin-bottom: 25px;
 }
-
-/* Page container card */
-.page-content {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-/* Navbar */
 nav a {
-  margin-right: 18px;
+  color: white;
+  margin: 0 18px;
   font-size: 17px;
 }
-
-/* Section spacing */
-section {
-  margin: 30px 0;
+nav a:hover {
+  color: #18bc9c;
 }
 
-/* Cute underline effect */
-h1, h2 {
-  position: relative;
+/* -----------------------------
+   PAGE CONTAINER
+------------------------------ */
+.page-content {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.06);
+  margin-top: 20px;
 }
+
+/* -----------------------------
+   HEADINGS
+------------------------------ */
+h1, h2, h3 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 14px;
+  margin-top: 35px;
+}
+
+/* cute colored underline */
 h1::after, h2::after {
   content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 40px;
-  height: 4px;
-  background: #6a5acd;
+  display: block;
+  width: 55px;
+  height: 5px;
+  background: #18bc9c;
   border-radius: 10px;
+  margin-top: 6px;
 }
 
-/* Project cards */
+/* -----------------------------
+   LISTS
+------------------------------ */
+ul li::marker {
+  color: #18bc9c;
+}
+
+/* -----------------------------
+   PROJECT CARDS
+------------------------------ */
 .project-card {
-  background: #ffffff;
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 14px;
+  background: #f4f4f4;
+  padding: 22px;
+  border-radius: 18px;
   margin-bottom: 20px;
+  border-left: 6px solid #18bc9c;
 }
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.07);
-  border-color: #ff69b4;
-}
-
-/* Cute bullet points */
-ul li::marker {
-  color: #ff69b4;
-}
-
-/* Footer small text */
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-}
+  background

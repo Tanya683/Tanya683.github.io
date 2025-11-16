@@ -12,6 +12,7 @@ hero: |
 ---
 
 
+
 <div class="page-inner">
 
 I’m a Software Developer experienced in building enterprise-grade applications using Java, Python, Spring Boot, and FastAPI.

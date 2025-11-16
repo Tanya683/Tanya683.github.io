@@ -24,179 +24,19 @@ nav {
   padding: 15px 20px;
   border-radius: 0 0 20px 20px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 0; /* Remove space under navbar */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 nav a {
   color: #2c3e50;
   margin: 0 18px;
   font-size: 18px;
   font-weight: 600;
 }
+
 nav a:hover {
   color: white;
-}
-
-/* -----------------------------
-   PAGE CONTENT (WHITE CARD)
------------------------------- */
-.page-content {
-  max-width: 1000px;
-  background: white;
-  margin: 60px auto;
-  padding: 60px;
-  border-radius: 30px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-}
-
-/* -----------------------------
-   HEADINGS
------------------------------- */
-h1, h2, h3 {
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 14px;
-  margin-top: 35px;
-}
-
-/* PINK underline */
-h1::after, h2::after {
-  content: "";
-  display: block;
-  width: 55px;
-  height: 5px;
-  background: #FF8DBA;
-  border-radius: 10px;
-  margin-top: 6px;
-}
-
-/* -----------------------------
-   PROJECT CARDS
------------------------------- */
-.project-card {
-  background: #FFE6EC;
-  padding: 22px;
-  border-radius: 18px;
-  margin-bottom: 20px;
-  border-left: 6px solid #FF8DBA;
-}
-.project-card:hover {
-  transform: translateY(-4px);
-  background: #FFD3E0;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
-  border-color: #FF4F9A;
-}
-
-/* -----------------------------
-   HERO SECTION (PINK)
------------------------------- */
-.hero {
-  width: 100%;
-  height: 350px;
-
-  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-
-  border-radius: 0 0 40px 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-  overflow: hidden;
-}
-
-/* pink overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 192, 203, 0.4);
-  backdrop-filter: blur(2px);
-}
-
-/* hero content */
-.hero-inner {
-  position: relative;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 20px 40px;
-  border-radius: 12px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.hero h3 {
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.aesthetic-section {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0 20px 0;
-}
-
-.aesthetic-image {
-  width: 100%;
-  max-width: 650px;
-  border-radius: 25px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-  animation: fadeIn 1.4s ease-in-out;
-}
-/* -----------------------------
-   NEW HERO DESIGN (like inspo)
------------------------------- */
-
-.hero-new {
-  position: relative;
-  width: 100%;
-  height: 430px;
-  overflow: hidden;
-  border-radius: 0 0 40px 40px;
-}
-
-.hero-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(80%);
-}
-
-.hero-text {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: white;
-  z-index: 3;
-  text-shadow: 0px 4px 12px rgba(0,0,0,0.4);
-}
-
-.hero-text h1 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.hero-text h3 {
-  font-size: 22px;
-  margin-top: 10px;
-  font-weight: 400;
-}
-
-.white-intro {
-  background: white;
-  padding: 60px 40px;
-  max-width: 900px;
-  margin: 50px auto;
-  border-radius: 30px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
 /* ---------------------------------------
@@ -208,6 +48,7 @@ h1::after, h2::after {
   position: relative;
   overflow: hidden;
   border-radius: 0 0 40px 40px;
+  margin-bottom: 40px;
 }
 
 .hero-bg {
@@ -248,6 +89,79 @@ h1::after, h2::after {
   margin-top: 10px;
 }
 
+/* -----------------------------
+   WHITE SECTION / PAGE CONTENT
+------------------------------ */
+.page-content {
+  max-width: 1000px;
+  background: white;
+  margin: 60px auto;
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* -----------------------------
+   HEADINGS
+------------------------------ */
+h1, h2, h3 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 14px;
+  margin-top: 35px;
+}
+
+/* PINK underline for headings */
+h1::after, h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 5px;
+  background: #FF8DBA;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+/* -----------------------------
+   PROJECT CARDS
+------------------------------ */
+.project-card {
+  background: #FFE6EC;
+  padding: 22px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border-left: 6px solid #FF8DBA;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  background: #FFD3E0;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+  border-color: #FF4F9A;
+}
+
+/* -----------------------------
+   AESTHETIC IMAGE SECTION (optional)
+------------------------------ */
+.aesthetic-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.aesthetic-image {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+/* fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 /* -----------------------------
    FOOTER

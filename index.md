@@ -14,16 +14,9 @@ hero: |
 
 <div class="page-inner">
 
-Hello 
-I am a software engineer with 4 years of experience building scalable backend systems, optimizing microservices, and delivering high-quality applications using Java, Spring Boot, and Python FastAPI.
+I’m a Software Developer experienced in building enterprise-grade applications using Java, Python, Spring Boot, and FastAPI.
 
-## I specialize in:
-- Microservices Architecture  
-- RESTful API Development  
-- Spring Boot, Spring Cloud  
-- CI/CD (Jenkins, GitHub)  
-- Credential Security  
-- Test Automation  
+I’ve delivered projects involving microservice design, secure credential management, automation of system audits, CI/CD optimization, and large-scale infrastructure migration. My work includes modernizing legacy systems, developing high-performance APIs, achieving 80%+ test coverage, and improving deployment reliability. I enjoy working on challenging backend problems and creating solutions that scale.
 
 </div>
 

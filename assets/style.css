@@ -45,30 +45,24 @@ nav a:hover {
 ------------------------------ */
 .hero-large {
   position: relative;
-  width: 100vw;                 /* FULL SCREEN WIDTH */
-  height: 65vh;                 /* full hero height */
-  min-height: 430px;            /* fallback for smaller screens */
+  width: 100vw;
+  height: 65vh;  /* or 70vh or 100vh depending how tall you want it */
   margin-left: calc((100% - 100vw) / 2);
   margin-right: calc((100% - 100vw) / 2);
   overflow: hidden;
 
-  background-image: url("/assets/aesthetic.jpg"); /* Your hero image */
-  background-size: cover;  /* FULL image coverage */
-  background-position: center center;
+  background-image: url("/assets/aesthetic.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Overlay for readability */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.5)
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
 }
 
-/* Text on image */
 .hero-content {
   position: absolute;
   bottom: 40px;
@@ -82,14 +76,13 @@ nav a:hover {
   font-size: 70px;
   margin: 0;
   font-weight: 700;
-  color: #fff !important;
 }
 
 .hero-content p {
   font-size: 22px;
   margin-top: 10px;
-  color: #fff !important;
 }
+
 
 /* -----------------------------
    WHITE CONTENT SECTION

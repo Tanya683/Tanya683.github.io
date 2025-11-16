@@ -10,6 +10,15 @@ title: "Home"
   </div>
 </div>
 
+<div class="aesthetic-section">
+  <img 
+    src="https://raw.githubusercontent.com/Tanya683/Tanya683.github.io/main/assets/aesthetic.jpg" 
+    alt="Aesthetic workspace" 
+    class="aesthetic-image"
+  >
+</div>
+
+
 # 👋 Hi, I'm **Tanya Singh**
 ### Software Engineer • Java • Python • Spring Boot • FastAPI • DevOps
 

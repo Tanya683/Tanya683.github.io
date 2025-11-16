@@ -1,23 +1,14 @@
 /* -----------------------------
-   GLOBAL STYLING
+   GLOBAL STYLING (PINK THEME)
 ------------------------------ */
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  background: #fefefe;
+  background: linear-gradient(#FFC0CB, #FFE6EC);
   color: #2c3e50;
   line-height: 1.7;
-}
-
-/* fade-in animation */
-.fade {
-  animation: fadeIn 1.2s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  min-height: 100vh;
 }
 
 /* Smooth animations */
@@ -26,38 +17,28 @@ body {
 }
 
 /* -----------------------------
-   LINKS
------------------------------- */
-a {
-  color: #18bc9c;
-  font-weight: 600;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff66b2;
-}
-
-/* -----------------------------
    NAVBAR
 ------------------------------ */
 nav {
-  background: #2c3e50;
+  background: #FFC0CB;
   padding: 15px 20px;
-  border-radius: 14px;
+  border-radius: 0 0 20px 20px;
   text-align: center;
   margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 nav a {
-  color: white;
+  color: #2c3e50;
   margin: 0 18px;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 600;
 }
 nav a:hover {
-  color: #18bc9c;
+  color: white;
 }
 
 /* -----------------------------
-   PAGE CONTAINER
+   PAGE CONTENT (WHITE CARD)
 ------------------------------ */
 .page-content {
   max-width: 1200px;
@@ -65,92 +46,106 @@ nav a:hover {
   padding: 40px;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
 /* -----------------------------
    HEADINGS
 ------------------------------ */
 h1, h2, h3 {
-  color: #2c3e50;
+  color: #333;
   font-weight: 700;
   margin-bottom: 14px;
   margin-top: 35px;
 }
 
-/* cute colored underline */
+/* PINK underline */
 h1::after, h2::after {
   content: "";
   display: block;
   width: 55px;
   height: 5px;
-  background: #18bc9c;
+  background: #FF8DBA;
   border-radius: 10px;
   margin-top: 6px;
-}
-
-/* -----------------------------
-   LISTS
------------------------------- */
-ul li::marker {
-  color: #18bc9c;
 }
 
 /* -----------------------------
    PROJECT CARDS
 ------------------------------ */
 .project-card {
-  background: #f4f4f4;
+  background: #FFE6EC;
   padding: 22px;
   border-radius: 18px;
   margin-bottom: 20px;
-  border-left: 6px solid #18bc9c;
+  border-left: 6px solid #FF8DBA;
 }
 .project-card:hover {
   transform: translateY(-4px);
-  background: #ffffff;
+  background: #FFD3E0;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
-  border-color: #ff66b2;
+  border-color: #FF4F9A;
 }
 
-/* ---------------------------------------
-   HERO SECTION
-----------------------------------------*/
+/* -----------------------------
+   HERO SECTION (PINK)
+------------------------------ */
 .hero {
   width: 100%;
-  height: 300px;
-  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1350&q=80");
+  height: 350px;
+
+  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 20px 20px;
+
+  border-radius: 0 0 40px 40px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  animation: floatBg 10s infinite alternate ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
-/* subtle animation (floating effect) */
-@keyframes floatBg {
-  0% { background-position: center; }
-  100% { background-position: center bottom; }
+/* pink overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 192, 203, 0.4);
+  backdrop-filter: blur(2px);
 }
 
+/* hero content */
 .hero-inner {
+  position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.7);
   padding: 20px 40px;
   border-radius: 12px;
-  backdrop-filter: blur(5px);
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 48px;
   margin-bottom: 10px;
 }
 
 .hero h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
+}
+
+/* -----------------------------
+   FOOTER
+------------------------------ */
+footer {
+  margin-top: 35px;
+  padding: 20px;
+  background: #FFC0CB;
+  color: #2c3e50;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  font-size: 14px;
 }

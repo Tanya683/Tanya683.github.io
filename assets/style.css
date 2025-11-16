@@ -40,66 +40,55 @@ nav a:hover {
   color: white;
 }
 
-/* Make hero text white + readable */
-.hero-content h1,
-.hero-content p {
-  color: #ffffff !important;
-  text-shadow: 0px 4px 14px rgba(0,0,0,0.55);
-}
-
-/* ---------------------------------------
-   LARGE FULL-WIDTH HERO (NO CROPPING)
-----------------------------------------*/
+/* -----------------------------
+   HERO SECTION — FULL WIDTH IMAGE
+------------------------------ */
 .hero-large {
-  width: 100%;
-  height: auto; /* allow image to define height */
   position: relative;
+  width: 100vw;                 /* FULL SCREEN WIDTH */
+  height: 65vh;                 /* full hero height */
+  min-height: 430px;            /* fallback for smaller screens */
+  margin-left: calc((100% - 100vw) / 2);
+  margin-right: calc((100% - 100vw) / 2);
   overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
+
+  background-image: url("/assets/aesthetic.jpg"); /* Your hero image */
+  background-size: cover;  /* FULL image coverage */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.hero-bg {
-  width: 100%;
-  height: auto !important; /* prevents cropping */
-  display: block;
-  object-fit: contain; /* show entire image */
-  object-position: center;
-  background-color: #FFC0CB; /* pink padding behind image */
-}
-
-/* Overlay over the image */
+/* Overlay for readability */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(
     rgba(0,0,0,0.2),
     rgba(0,0,0,0.5)
   );
 }
 
-/* Text inside hero image */
+/* Text on image */
 .hero-content {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  color: white;
   z-index: 3;
-  text-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  color: white;
+  text-shadow: 0 4px 14px rgba(0,0,0,0.6);
 }
 
 .hero-content h1 {
   font-size: 70px;
   margin: 0;
   font-weight: 700;
+  color: #fff !important;
 }
 
 .hero-content p {
   font-size: 22px;
   margin-top: 10px;
+  color: #fff !important;
 }
 
 /* -----------------------------

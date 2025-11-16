@@ -138,6 +138,21 @@ h1::after, h2::after {
   font-weight: 400;
 }
 
+.aesthetic-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.aesthetic-image {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+
 /* -----------------------------
    FOOTER
 ------------------------------ */

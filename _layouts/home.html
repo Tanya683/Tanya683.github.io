@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Jekyll head (plugins, seo, etc) -->
+  {{ site.head }}
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your CSS (ensure this path exists in repo) -->
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="{{ "/" | relative_url }}">{{ site.title | default: "Home" }}</a>
+      <a href="{{ "/about/" | relative_url }}">About</a>
+      <a href="{{ "/projects/" | relative_url }}">Projects</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    {{ content }}
+  </main>
+
+  <footer>
+    © {{ site.title }} • Built with ❤️ using GitHub Pages
+  </footer>
+
+  {{ content_for_footer }}
+</body>
+</html>

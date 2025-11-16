@@ -15,8 +15,6 @@ title: "Home"
 </div>
 
 
-
-
 <section class="white-intro">
 # 👋 Hi, I'm **Tanya Singh**
 

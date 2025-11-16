@@ -63,10 +63,11 @@ nav a:hover {
 .hero-bg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;     /* shows the FULL image */
   object-position: center;
-  image-orientation: from-image; /* keeps image straight */
+  background-color: #FFC0CB; /* fills empty space with pink */
 }
+
 
 
 

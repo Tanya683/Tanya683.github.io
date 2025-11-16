@@ -1,7 +1,14 @@
 ---
-layout: home
+layout: default
 title: "Home"
 ---
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Hi, I'm Tanya 👋</h1>
+    <h3>Software Engineer — Java | Python | Spring Boot | DevOps</h3>
+  </div>
+</div>
 
 # 👋 Hi, I'm **Tanya Singh**
 ### Software Engineer • Java • Python • Spring Boot • FastAPI • DevOps

@@ -72,7 +72,8 @@ body {
 }
 
 /* Headings */
-h3 {
+.section h3 {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
 }

@@ -152,8 +152,10 @@ body {
 
 
 .snapshot-list {
+  text-align: center;
   list-style: none;
   padding-left: 0;
+ 
 }
 
 

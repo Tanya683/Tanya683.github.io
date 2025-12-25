@@ -191,6 +191,30 @@ h3 {
   100% { transform: translateY(0); }
 }
 
+/* ===== Mobile Responsiveness ===== */
+
+@media (max-width: 768px) {
+
+  .code-shape {
+    font-size: 4rem;
+    color: rgba(233, 30, 99, 0.03);
+  }
+
+  .shape-1 {
+    top: 35%;
+    left: -10%;
+  }
+
+  .shape-2 {
+    bottom: 5%;
+    right: -15%;
+  }
+
+  .shape-3 {
+    display: none;
+  }
+}
+
 /* Footer */
 .footer {
     background-color: #111;

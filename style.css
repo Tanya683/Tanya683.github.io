@@ -154,12 +154,18 @@ h3 {
 
 /* ===== Abstract Code Background ===== */
 
+
 .code-bg {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 1;
 }
 
+.snapshot .container {
+  position: relative;
+  z-index: 2;
+}
 .code-shape {
   position: absolute;
   font-size: 6rem;
